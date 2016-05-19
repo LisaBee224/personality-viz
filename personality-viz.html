@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="application.css">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="application.js"></script>
   <script src="data_set.js"></script>
@@ -16,17 +16,17 @@
     <h1>pick your type</h1>
 
     <div class = "question">
-      <span class="ei">
-        <a id="E" href="/">E</a>
-        <p class="text hidden" id="E">
+      <span class="question ei">
+        <a class="ei" id="E" href="/">E</a>
+        <p class="text hidden" id="PE">
           I focus on the world that is external to me.<br>
           I get more energy from being around people.<br>
           I'm happier when I'm active.
         </p>
       </span>
-      <span class="ei">
+      <span class="question ei">
         <a class="ei" id="I" href="/">I</a>
-        <p class="text hidden" id="E">
+        <p class="text hidden" id="PI">
           I focus on my inner world.<br>
           I get more energy from reflection or being alone.<br>
           I'm happier when I'm with a small group, one-on-one, or alone.
@@ -35,16 +35,17 @@
     </div>
 
     <div class = "question">
-      <span class="sn">
-        <a id="S" href="/">S</a>
-        <p class="text hidden">
+      <span class="question sn">
+        <a class="sn" id="S" href="/">S</a>
+        <p class="text hidden" id="PS">
           I focus on the things I can see and interact with.<br>
-          My attention is squarely in the current sphere.<br>
+          I can easily manipulate and interact with the physical world.<br>
+          My attention is squarely in the current sphere.
         </p>
       </span>
-      <span class="sn">
-        <a id="N" href="/">N</a>
-        <p class="text hidden">
+      <span class="question sn">
+        <a class="sn" id="N" href="/">N</a>
+        <p class="text hidden" id="PN">
           I focus on the things that are abstract or conceptual.<br>
           I can easily see conceptual patterns and can predict changes.<br>
           My attention is generally in the past or future sphere.
@@ -52,17 +53,17 @@
       </span>
     </div>
 
-    <div class = "question">
-      <span class="tf">
-        <a id="T" href="/">T</a>
-        <p class="text hidden">
+    <div class="question">
+      <span class="question tf">
+        <a class="tf" id="T" href="/">T</a>
+        <p class="text hidden" id="PT">
           I most value objective reasoning.<br>
           I can clearly explain the logical underpinnings of a given structure.
         </p>
       </span>
-      <span class="tf">
-        <a id="F" href="/">F</a>
-        <p class="text hidden">
+      <span class="question tf">
+        <a class="tf" id="F" href="/">F</a>
+        <p class="text hidden" id="PF">
           I most value interpersonal harmony.<br>
           I can clearly explain the reasons and values underpinning a given social scenario.
         </p>
@@ -70,17 +71,17 @@
     </div>
 
     <div class = "question">
-      <span class="jp">
-        <a id="P" href="/">P</a>
-        <p class="text hidden">
+      <span class="question jp">
+        <a class="jp" id="P" href="/">P</a>
+        <p class="text hidden" id="PP">
           Spontaneity. Flexibility. Adaptability.<br>
           I prefer keeping my options open.<br>
           I prefer responding naturally to the flow of events.
         </p>
       </span>
-      <span class="jp">
-        <a id="J" href="/">J</a>
-        <p class="text hidden">
+      <span class="question jp">
+        <a class="jp" id="J" href="/">J</a>
+        <p class="text hidden" id="PJ">
           Structure. Organization. Preparation. Closure.<br>
           I prefer being in control.<br>
           I prefer being productive, timely, and focused.
@@ -92,8 +93,22 @@
 
 
   <div class="data hidden">
-    
-
+    <span id="ISTJ">ISTJ</span>
+    <span id="ISFJ">ISFJ</span>
+    <span id="INFJ">INFJ</span>
+    <span id="INTJ">INTJ</span>
+    <span id="ISTP">ISTP</span>
+    <span id="ISFP">ISFP</span>
+    <span id="INFP">INFP</span>
+    <span id="INTP">INTP</span>
+    <span id="ESTP">ESTP</span>
+    <span id="ESFP">ESFP</span>
+    <span id="ENFP">ENFP</span>
+    <span id="ENTP">ENTP</span>
+    <span id="ESTJ">ESTJ</span>
+    <span id="ESFJ">ESFJ</span>
+    <span id="ENFJ">ENFJ</span>
+    <span id="ENTJ">ENTJ</span>
   </div>
 
 </body>
