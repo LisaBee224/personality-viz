@@ -10,7 +10,7 @@ require 'rubygems'
 
 require 'uri'
 require 'pathname'
-
+require 'pry'
 require 'pg'
 require 'active_record'
 require 'logger'
@@ -20,6 +20,7 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 require 'pry'
+require 'json'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
