@@ -1,4 +1,4 @@
- var data_by_sub: {
+ var data_by_sub = {
     E: 49.3,
     I: 50.7,
     S: 73.3,
@@ -9,7 +9,7 @@
     P: 45.9
  }
 
-var data_by_types ={
+var data_by_types = {
   ISTJ: 11.6,
   ISFJ: 13.8,
   INFJ: 1.5,
@@ -35,20 +35,22 @@ function Collection() {
   this.jp = undefined
 }
 
-  Collection.prototype.allFull = function() {
-    var arr = []
-    for (var i in this){
-      if (this[i](typeof(String)) {
+Collection.prototype.allFull = function() {
+  var arr = []
+  for (var i in this){
+    if (this[i]) {
+      if (typeof this[i] === 'string') {
         arr.push(this[i]);
       }
     }
-    return arr.length == 4;
   }
+  return arr.length === 4;
+}
 
 Collection.prototype.generateType = function() {
-    var values = []
-    for (var i in this) {
-      values.push(this[i]);
-    }
-    return values.join();
+  var values = []
+  for (var i in this) {
+    values.push(this[i]);
+  }
+  return values.slice(0, 4).join('');
 }

@@ -1,0 +1,161 @@
+body {
+  margin: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 70%;
+}
+
+.question span {
+  display: flex;
+  width: 600px;
+  height: 200px;
+  border: 1px solid #58CCA0;
+  text-align: right;
+  font-size: 4em;
+  margin: 1%;
+  background-color: #58CCA0;
+}
+
+.question span a {
+}
+
+.question span p {
+  font-size: .3em;
+  width: 400px;
+}
+
+.hidden {
+  font-size: .3em;
+  display: none;
+}
+
+.data {
+  width: 70%;
+  margin: 10% auto;
+}
+
+.data span {
+  display: inline-block;
+  text-align: center;
+}
+
+#ISTJ {
+  width: 232px;
+  height: 232px;
+  border-radius: 116px;
+  background-color: #6DFFC7
+}
+
+#ISFJ {
+  width: 276px;
+  height: 276px;
+  border-radius: 138px;
+  background-color: #6DFFC7
+}
+
+#INFJ {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #6DFFC7
+}
+
+#INTJ {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: #6DFFC7
+}
+
+#ISTP {
+  width: 108px;
+  height: 108px;
+  border-radius: 54px;
+  background-color: #6DFFC7
+}
+
+#ISFP {
+  width: 166px;
+  height: 166px;
+  border-radius: 88px;
+  background-color: #6DFFC7;
+}
+
+#INFP {
+  width: 88px;
+  height: 88px;
+  border-radius: 44px;
+  background-color: #6DFFC7;
+}
+
+#INTP {
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  background-color: #6DFFC7;
+}
+
+#ESTP {
+  width: 86px;
+  height: 86px;
+  border-radius: 43px;
+  background-color: #6DFFC7;
+}
+
+#ESFP {
+  width: 170px;
+  height:170px;
+  border-radius:85px;
+  background-color: #6DFFC7;
+}
+
+#ENFP {
+  width: 162px;
+  height: 162px;
+  border-radius:81px;
+  background-color: #6DFFC7;
+}
+
+#ENTP {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #6DFFC7;
+}
+
+#ESTJ {
+  width: 174px;
+  height: 174px;
+  border-radius: 87px;
+  background-color: #6DFFC7;
+}
+
+#ESFJ {
+  width: 246px;
+  height: 246px;
+  border-radius: 123px;
+  background-color: #6DFFC7;
+}
+
+#ENFJ {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #6DFFC7;
+}
+
+#ENTJ {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #6DFFC7;
+}
