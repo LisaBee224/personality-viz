@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    normalize.css removes cross-browser differences in defaults, e.g.,
-    differences in how form elements appear between Firefox and IE
-    See: http://necolas.github.com/normalize.css/
-  -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src="/js/application.js"></script>
-  <script src="/js/data_set.js"></script>
+  <script src="application.js"></script>
+  <script src="data_set.js"></script>
 
-
-  <title></title>
+  <title>Personality Types Visualization</title>
 </head>
 <body>
   <div class="test active">
     <h1>pick your type</h1>
 
     <div class = "question">
-      <a class="ei" id="E" href="/">E</a>
-      <a class="ei" id="I" href="/">I</a>
+      <span class="ei">
+        <a id="E" href="/">E</a>
+        <p class="text hidden" id="E">
+          I focus on the world that is external to me.<br>
+          I get more energy from being around people.<br>
+          I'm happier when I'm active.
+        </p>
+      </span>
+      <span class="ei">
+        <a class="ei" id="I" href="/">I</a>
+        <p class="text hidden" id="E">
+          I focus on my inner world.<br>
+          I get more energy from reflection or being alone.<br>
+          I'm happier when I'm with a small group, one-on-one, or alone.
+        </p>
+      </span>
     </div>
 
     <div class = "question">
-      <a class="sn" id="S" href="/">S</a>
-      <a class="sn" id="N" href="/">N</a>
+      <span class="sn">
+        <a id="S" href="/">S</a>
+        <p class="text hidden">
+          I focus on the things I can see and interact with.<br>
+          My attention is squarely in the current sphere.<br>
+        </p>
+      </span>
+      <span class="sn">
+        <a id="N" href="/">N</a>
+        <p class="text hidden">
+          I focus on the things that are abstract or conceptual.<br>
+          I can easily see conceptual patterns and can predict changes.<br>
+          My attention is generally in the past or future sphere.
+        </p>
+      </span>
     </div>
 
     <div class = "question">
-      <a class="tf" id="T" href="/">T</a>
-      <a class="tf" id="F" href="/">F</a>
+      <span class="tf">
+        <a id="T" href="/">T</a>
+        <p class="text hidden">
+          I most value objective reasoning.<br>
+          I can clearly explain the logical underpinnings of a given structure.
+        </p>
+      </span>
+      <span class="tf">
+        <a id="F" href="/">F</a>
+        <p class="text hidden">
+          I most value interpersonal harmony.<br>
+          I can clearly explain the reasons and values underpinning a given social scenario.
+        </p>
+      </span>
     </div>
 
     <div class = "question">
-      <a class="jp" id="J" href="/">P</a>
-      <a class="jp" id="P" href="/">J</a>
+      <span class="jp">
+        <a id="P" href="/">P</a>
+        <p class="text hidden">
+          Spontaneity. Flexibility. Adaptability.<br>
+          I prefer keeping my options open.<br>
+          I prefer responding naturally to the flow of events.
+        </p>
+      </span>
+      <span class="jp">
+        <a id="J" href="/">J</a>
+        <p class="text hidden">
+          Structure. Organization. Preparation. Closure.<br>
+          I prefer being in control.<br>
+          I prefer being productive, timely, and focused.
+        </p>
+      </span>
     </div>
   </div>
 
 
 
   <div class="data hidden">
-
+    
 
   </div>
 
