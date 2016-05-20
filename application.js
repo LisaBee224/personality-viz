@@ -10,7 +10,7 @@ $(document).ready(function() {
       var type = collection.generateType();
       $(".question").hide();
       $(".data").show();
-      $("#" + type).css("background-color", "red");
+      $("#" + type).css("background-color", "#ff1ac6");
     }
   });
 
